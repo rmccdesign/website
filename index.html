@@ -1,290 +1,805 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Ruairí McCrickard | RMcC Design</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Freelance Graphic & Web Designer based in Belfast, Northern Ireland. I work with a range of clients to develop brand identity and develop tailored web solutions.">
+    <meta name="author" content="Ruairí McCrickard">
+	<meta name="keywords" content="graphic, web, design, belfast, rmcc, rmccdesign, portfolio, ruairi, mccrickard, ruairimccrickard, designer, ux, ui, ireland, northern ireland">
+	
+	<!--Twitter Share Card-->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@rmccdesign">
+	<meta name="twitter:creator" content="@rmccdesign">
+	<meta name="twitter:title" content="Ruairí McCrickard - Portfolio | RMcC Design | Belfast, NI">
+	<meta name="twitter:description" content="Freelance Graphic & Web Designer based in Belfast, Northern Ireland. I work with a range of clients to develop brand identity and develop tailored web solutions.">
+	<meta name="twitter:image" content="https://ruairimccrickard.com/img/rmcc-signature.png">
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('/w3images/parallax1.jpg');
-  min-height: 100%;
-}
+    <title>Ruairí McCrickard - Portfolio | RMcC Design | Belfast, NI</title>
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
-  min-height: 400px;
-}
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
-  min-height: 400px;
-}
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+    <!-- Theme CSS -->
+    <link href="css/agency.css" rel="stylesheet">
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-</style>
+    <!--Progress Circle-->
+    <!-- <link rel="stylesheet" href="css/grasp_mobile_progress_circle.css"> -->
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favi/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favi/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favi/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favi/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favi/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favi/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favi/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favi/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favi/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favi/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
+    <link rel="manifest" href="favi/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favi/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
 </head>
-<body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
+<body id="page-top" class="index">
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="page-scroll" href="#page-top"><img src="img/rmcc-signature.png" alt="RMcC Logo" width="120px"></a>
+            </div>
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div>
-</div>
-
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
-    Partners
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
-    Projects Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Happy Clients
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
-  </div>
-</div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
-      </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Skills</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#cv">CV</a>
+                    </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="#experience">Experience</a>
+                    </li> -->
+                    <!--<li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in"><h1>hi!</h1></div>
+                <div class="intro-heading" style="position: relative">I<span class="accent">'</span>m <br>Ruairí <br>M<span id="c-dot">&#267;</span><!--<span id="small-c">C</span><span id="small-dot" class="accent">.</span>--><span id="crick">Crickard</span><span class="accent">.</span></div>
+                <a href="#about" class="page-scroll btn btn-l">more about me.</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About Me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">I'm Ruairí, a 25 year old designer with a passion for all things creative. I'm based in Belfast, Norther Ireland. I graduated from Ulster University with BSc Interactive Multimedia Design in 2017 and have been freelancing projects since 2014.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="team-member">
+                        <img src="img/me.png" class="img-responsive img-circle" alt="Me" width="200px">
+                        <h4>Ruairí McCrickard</h4>
+                        <p class="text-muted">Designer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="tel:07803409056"><i class="fa fa-phone"></i></a>
+                            </li>
+                            <li><a href="http://www.instagram.com/rmccdesign" target="_blank"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a href="http://www.twitter.com/rmccdesign" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="http://www.pinterest.com/rmccdesign" target="_blank"><i class="fa fa-pinterest"></i></a>
+                            </li>
+                            <li><a href="http://www.linkedin.com/in/ruairimccrickard" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="mailto:info@rmccdesign.com"><i class="fa fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div id="development" class="col-sm-4">
+                    <h4>Development <span class="thin">Skills</span></h4>
+                    <div class="dev-skill">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h5>HTML 5</h5>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="w3-light-grey">
+                                    <div class="w3-grey" style="height:15px;width:90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dev-skill">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h5>CSS 3</h5>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="w3-light-grey">
+                                    <div class="w3-grey" style="height:15px;width:85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dev-skill">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h5>Magento</h5>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="w3-light-grey">
+                                    <div class="w3-grey" style="height:15px;width:70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dev-skill">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h5>PHP 7</h5>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="w3-light-grey">
+                                    <div class="w3-grey" style="height:15px;width:60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dev-skill">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h5>JS</h5>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="w3-light-grey">
+                                    <div class="w3-grey" style="height:15px;width:50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dev-skill">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h5>jQuery</h5>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="w3-light-grey">
+                                    <div class="w3-grey" style="height:15px;width:65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dev-skill">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h5>Slim/REST</h5>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="w3-light-grey">
+                                    <div class="w3-grey" style="height:15px;width:53%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dev-skill">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h5>Git</h5>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="w3-light-grey">
+                                    <div class="w3-grey" style="height:15px;width:80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="dev-skill">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h5>Apache</h5>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="w3-light-grey">
+                                    <div class="w3-grey" style="height:15px;width:65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+                <div id="design" class="col-sm-5">
+                    <h4>Design <span class="thin">Skills</span></h4>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div id="sellPerCirc1" class="perCirc">
+                                <div class="perCircInner">
+                                    <div class="circle-title">Photoshop</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div id="sellPerCirc2" class="perCirc">
+                                <div class="perCircInner">
+                                    <div class="circle-title">InDesign</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div id="sellPerCirc3" class="perCirc">
+                                <div class="perCircInner">
+                                    <div class="circle-title">Illustrator</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div id="sellPerCirc4" class="perCirc">
+                                <div class="perCircInner">
+                                    <div class="circle-title">Magento</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div id="sellPerCirc5" class="perCirc">
+                                <div class="perCircInner">
+                                    <div class="circle-title">Mailchimp</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div id="sellPerCirc6" class="perCirc">
+                                <div class="perCircInner">
+                                    <div class="circle-title">UI/UX</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="other" class="col-sm-3">
+                    <h4>Other <span class="thin">Skills</span></h4>
+                    <ul id="other-skill">
+                        <li>Drupal & Wordpress CMS</li>
+                        <li>Database Design</li>
+                        <li>Marketing</li>
+                        <li>Jira / Zoho Projects</li>
+                        <li>Communication</li>
+                        <li>Visual Storytelling</li>
+                        <li>Creative Thinker</li>
+                        <li>Fast Learner</li>
+                        <li>Time Management</li>
+                        <li>Patient</li>
+                        <li>Team Worker</li>
+                        <li>Friendly & Approachable</li>
+                        <li>Dedication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Here are some of my most recent projects.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/youtcal-preview.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Youth Cal</h4>
+                        <p class="text-muted">Web Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/skla.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Studio KLA</h4>
+                        <p class="text-muted">Logo Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/beautifia.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>BeautiFia</h4>
+                        <p class="text-muted">Logo Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/ac-crushers.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Alpha Crushers</h4>
+                        <p class="text-muted">Branding</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/ac-makeup.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Áine Croskery Makeup Artist</h4>
+                        <p class="text-muted">Logo Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/bridgeautos.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Bridge Autos</h4>
+                        <p class="text-muted">Branding</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="text-center"><a href="/portfolio/">View All</a></h2>
+        
+    </section>
+
+  <!-- CV Section -->
+    <section id="cv">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-headin">CV</h2>
+                    <h3 class="section-subheading text-muted">More info on my experience available in my CV.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <a href="docs/RuairiMcCrickardCV.pdf" target="_blank">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-file-text fa-stack-1x fa-inverse"></i>
+                    </span></a>
+                    <h4 class="service-heading"><a href="docs/RuairiMcCrickardCV.pdf">Download my CV</a></h4>
+                    <!-- <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!--<section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Me</h2>
+                    <h3 class="section-subheading text-muted">To start a project please feel free to get in touch.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" validate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <footer class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">&copy; RMcC Design <script>document.write(new Date().getFullYear())</script></span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="http://www.twitter.com/rmccdesign" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="http://www.instagram.com/rmccdesign" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li><a href="http://www.linkedin.com/in/ruairimccrickard" target="_blank"<i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>YouthCal</h2>
+                                <p class="item-intro text-muted">Youth Club Management Website</p>
+                                <img class="img-responsive img-centered" src="../youthcal/img/web_logo.png" alt="">
+                                <p>YouthCal was my major project for final year of my BSc in Interactive Multimedia Design. The website is aimed towards youth clubs allowing them to organise events and manage their users.</p>
+                                <p>For preview purposes you can log in to the application using these credentials:</p>
+                                <p><strong>Username:</strong> dev <br> <strong>Password:</strong> dev</p>
+                                <p><strong><a href="/youthcal">See YouthCal in action!</a></strong></p>
+                                <ul class="list-inline">
+                                    <li>Date: May 2017</li>
+                                    <li>Client: Ulster University</li>
+                                    <li>Category: Web Design</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Studio KLA</h2>
+                                <p class="item-intro text-muted"></p>
+                                <img class="img-responsive img-centered" src="img/skla.png" alt="">
+                                <p>This logo was a redesign done for a local nail technician to develop an online presence to attract new clients.</p>
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+                                <ul class="list-inline">
+                                    <li>Date: September 2018</li>
+                                    <li>Client: Studio KLA by Michaela</li>
+                                    <li>Category: Logo Design</li>
+                                </ul>
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>BeautiFia</h2>
+                                <p class="item-intro text-muted">Business Logo &amp; Online Content Design.</p>
+                                <img class="img-responsive img-centered" src="img/beautifia.png" alt="">
+                                <p>I designed this logo for a new local beauty therapy salon to develop their online presence and create a brand. This logo was used for their new posters, business cards and signage</p>
+                                
+                                <ul class="list-inline">
+                                    <li>Date: July 2018</li>
+                                    <li>Client: BeautiFia</li>
+                                    <li>Category: Logo Design</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Alpha Crushers</h2>
+                                <p class="item-intro text-muted">Company Logo &amp; Business Cards.</p>
+                                <img class="img-responsive img-centered" src="img/alpha-preview.png" alt="">
+                                <p>I was comissioned by <a href="http://screen2crush.com/">Screen 2 Crush</a> to create a logo for their upcoming sister company and example uses of the brand image for use upon their launch.</p>
+                                
+                                <ul class="list-inline">
+                                    <li>Date: September 2014</li>
+                                    <li>Client: Screen 2 Crush</li>
+                                    <li>Category: Branding</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Áine Croskery Makeup Artist</h2>
+                                <p class="item-intro text-muted">Online Presence Logo.</p>
+                                <img class="img-responsive img-centered" src="img/ac-makeup.png" alt="">
+                                <p>I created this logo for local makeup artist Áine Croskery for her social media accounts to boost her online presence and increase client bookings.</p>
+                                
+                                <ul class="list-inline">
+                                    <li>Date: July 2016</li>
+                                    <li>Client: Áine Croskery Makeup Artist</li>
+                                    <li>Category: Logo Design</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Bridge Autos</h2>
+                                <p class="item-intro text-muted">Company Logo &amp; Branding.</p>
+                                <img class="img-responsive img-centered" src="img/bridgeautos.png" alt="">
+                                <p>I was comissioned by Bridge Autos to redeisgn their logo for use on their invoices, signage, social media, clothing and vehicle stickers.</p>
+                                
+                                <ul class="list-inline">
+                                    <li>Date: October 2015</li>
+                                    <li>Client: Bridge Autos</li>
+                                    <li>Category: Logo Design</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
+    <script>
+        perCirc($('#sellPerCirc1'), 90);
+
+        perCirc($('#sellPerCirc2'), 50);
+
+        perCirc($('#sellPerCirc3'), 40);
+
+        perCirc($('#sellPerCirc4'), 85);
+
+        perCirc($('#sellPerCirc5'), 80);
+
+        perCirc($('#sellPerCirc6'), 75);
+
+        function perCirc($el, end, i) {
+            if (end < 0)
+                end = 0;
+            else if (end > 100)
+                end = 100;
+            if (typeof i === 'undefined')
+                i = 0;
+            var curr = (100 * i) / 360;
+            $el.find(".perCircStat").html(Math.round(curr) + "%");
+            if (i <= 180) {
+                $el.css('background-image', 'linear-gradient(' + (90 + i) + 'deg, transparent 50%, #ccc 50%),linear-gradient(90deg, #ccc 50%, transparent 50%)');
+            } else {
+                $el.css('background-image', 'linear-gradient(' + (i - 90) + 'deg, transparent 50%, rgb(4,146,123) 50%),linear-gradient(90deg, #ccc 50%, transparent 50%)');
+            }
+            if (curr < end) {
+                setTimeout(function () {
+                    perCirc($el, end, ++i);
+                }, 1);
+            }
+        }
+    </script>
+
 
 </body>
+
 </html>
